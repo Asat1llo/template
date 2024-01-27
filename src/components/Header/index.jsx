@@ -1,9 +1,9 @@
-
+import classes from './header.module.css'
 
 function Header(){
     return(
-        <section className="section-header">
-        <h3>this is header</h3>
+        <section >
+        <h3 className={classes.titleHeader} >this is header</h3>
         </section>
     )
 }
