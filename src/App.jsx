@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import {Header, Footer} from './components/index.jsx'
-import { Home, Movie } from './pages/index.js'
+import { Home, Movie,Counter } from './pages/index.js'
 
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/movie' element={<Movie/>} />
       </Routes>
+      <Counter/>
       <Footer />
     </>
   )

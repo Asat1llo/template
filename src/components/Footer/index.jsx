@@ -1,11 +1,9 @@
 import classes from './footer.module.css'
 
-function Footer(){
+export function Footer(){
     return(
         <section >
-         <h3 className={classes.titleFooter}>this is footer</h3>
+         <h3 className={classes.titleFooter}></h3>
         </section>
     )
 }
-
-export default Footer

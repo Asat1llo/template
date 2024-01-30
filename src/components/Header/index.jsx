@@ -1,11 +1,9 @@
 import classes from './header.module.css'
 
-function Header(){
+export function Header(){
     return(
         <section >
-        <h3 className={classes.titleHeader} >this is header</h3>
+        <h3 className={classes.titleHeader} ></h3>
         </section>
     )
 }
-
-export default Header
