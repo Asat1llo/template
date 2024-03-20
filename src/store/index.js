@@ -1,9 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import Counter from './Counter';
+import counter from './counter';
 
-export const store = configureStore({
+export default configureStore({
 	reducer:{
-		Counter,
-		students: Counter,
+	  count:counter,
 	}
 })

@@ -1,16 +1,15 @@
 import { useSelector,useDispatch } from 'react-redux'
-import { increment,decrement } from '../../store/Counter';
+import { increment,decrement } from '../../store/counter';
 
 
 export const Counter = ()=>{
 
-	const counter = useSelector((store)=>store.Counter)
+	const count = useSelector((store)=>store.count)
 	const dispatch = useDispatch()
-	console.log(counter,'state');
 
 	return(
 		<div>
-			<h1>{counter.value}</h1>
+			<h1 className='text-red-950'>{count.value}</h1>
 			<div>
 			<button onClick={()=>dispatch(increment())}>increment</button>
 			<br />
